@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="首頁" />
+    <item
+        android:id="@+id/nav_sort"
+        android:icon="@drawable/ic_sort"
+        android:title="分類" />
+    <item
+        android:id="@+id/nav_discount"
+        android:icon="@drawable/ic_discount"
+        android:title="天氣" />
+    <item
+        android:id="@+id/nav_shoppingcar"
+        android:icon="@drawable/ic_shopping_cart"
+        android:title="網路商城" />
+    <item
+        android:id="@+id/nav_member"
+        android:icon="@drawable/ic_member"
+        android:title="會員" />
+</menu>

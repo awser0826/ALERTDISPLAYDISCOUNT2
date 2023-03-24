@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "305778404922",
+    "project_id": "alertdisplaydiscount2",
+    "storage_bucket": "alertdisplaydiscount2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305778404922:android:d6b1bdba6462678a180f03",
+        "android_client_info": {
+          "package_name": "com.example.alertdisplaydiscount2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305778404922-6bknj7c7od58aj19g1iso2f1n4tnr0du.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvaFNKX0JvJq8nG_-OutS3AQGBoXWcB-g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305778404922-6bknj7c7od58aj19g1iso2f1n4tnr0du.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

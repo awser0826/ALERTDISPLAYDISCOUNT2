@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="65sp"
+    tools:layout_editor_absoluteY="16sp">
+
+
+    <TextView
+        android:id="@+id/CNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:textColor="#00bfff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/CName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/CNum"
+        android:fontFamily="serif"
+        android:textColor="#00bfff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/Det"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CName"
+        android:layout_toRightOf="@+id/CNum" />
+
+    <TextView
+        android:id="@+id/CMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Det"
+        android:layout_toRightOf="@+id/CNum" />
+
+    <TextView
+        android:id="@+id/CMany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CMoney"
+        android:layout_toRightOf="@+id/CNum" />
+
+    <TextView
+        android:id="@+id/CImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/CMany"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="411dp"
+        android:layout_marginRight="411dp"
+        android:layout_toRightOf="@+id/CNum" />
+
+
+</RelativeLayout>
+
+

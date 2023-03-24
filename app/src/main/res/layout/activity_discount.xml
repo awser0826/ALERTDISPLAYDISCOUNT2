@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7DC"
+    tools:context=".discount">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:visibility="visible"
+
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent">
+    <RelativeLayout
+        android:id="@+id/rlWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        >
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="#03A9F4"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="城市"
+            android:textSize="32dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-medium"
+            ></TextView>
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="時間"
+            android:layout_below="@+id/txtCity"
+            android:textColor="#ffffff"
+            android:textSize="16dp"
+            ></TextView>
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/txtTime"
+            android:src="@drawable/phc"
+            ></ImageView>
+        <TextView
+            android:id="@+id/txtValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/imgIcon"
+            android:text="3℃"
+            android:textSize="70dp"
+            android:textColor="#ffffff"
+            android:fontFamily="sans-serif-condensed-light"
+            ></TextView>
+    </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rlMain"
+            android:background="#EAE7DC"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgFeelLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/temp" />
+
+            <TextView
+                android:id="@+id/txtTitleFeelLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgFeelLike"
+                android:text="體感"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtValueFeelLike"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitleFeelLike"
+                android:layout_alignLeft="@+id/txtTitleFeelLike"
+                android:text="7℃"
+                android:textSize="22dp"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFeelLike"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/humidity" />
+
+            <TextView
+                android:id="@+id/txtTitleHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgHumidity"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgHumidity"
+                android:text="濕度"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtValueHumidity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitleHumidity"
+                android:layout_alignLeft="@+id/txtTitleHumidity"
+                android:text="37"
+                android:textSize="22dp" />
+
+            <ImageView
+                android:id="@+id/imgVision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/txtTitleFeelLike"
+                android:src="@drawable/vision" />
+
+            <TextView
+                android:id="@+id/txtTitleVision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgVision"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgVision"
+                android:text="能見度"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtValueVision"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTitleVision"
+                android:layout_alignLeft="@+id/txtTitleVision"
+                android:text="10000"
+                android:textSize="22dp" />
+
+            <Button
+                android:id="@+id/spinning_button"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_below="@+id/imgVision"
+                android:layout_toRightOf="@+id/txtTitleHumidity"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:text="領取優惠"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D8C3A5"
+        app:itemIconSize="30dp"
+        app:itemIconTint="#8E8D8A"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/item_menu" />
+</RelativeLayout>

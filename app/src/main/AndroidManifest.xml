@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alertdisplaydiscount2">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ALERTDISPLAYDISCOUNT2">
+        <activity android:name=".editmemberinformation"></activity>
+        <activity android:name=".address" />
+        <activity android:name=".ordertraking" />
+        <activity android:name=".deleteaccount" />
+        <activity android:name=".privacy" />
+        <activity android:name=".memberinformation" />
+        <activity android:name=".changingpassword" />
+        <activity android:name=".cameraload" />
+        <activity android:name=".addressreal" />
+        <activity android:name=".addresspage" />
+        <activity android:name=".CartActivity" />
+        <activity android:name=".spinner_page" />
+        <activity android:name=".membercenter" />
+        <activity android:name=".ship_mydiscount" />
+        <activity android:name=".delivery" />
+        <activity android:name=".assembly" />
+        <activity android:name=".commodity" />
+        <activity android:name=".support" />
+        <activity android:name=".shipment" />
+        <activity android:name=".setting" />
+        <activity android:name=".payment" />
+        <activity android:name=".memberregister" />
+        <activity android:name=".forgetpassword" />
+        <activity android:name=".discount2" />
+        <activity android:name=".discount_use" />
+        <activity android:name=".finishorder" />
+        <activity android:name=".discount_message" />
+        <activity android:name=".mydiscount" />
+        <activity android:name=".sort_chair" />
+        <activity android:name=".sort_cabinet" />
+        <activity android:name=".sort_sofa" />
+        <activity android:name=".sort_bed" />
+        <activity android:name=".sort_table" />
+        <activity android:name=".restaurant" />
+        <activity android:name=".member" />
+        <activity android:name=".shoppingcart" />
+        <activity android:name=".discount" />
+        <activity android:name=".sort" />
+        <activity android:name=".home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.alertdisplaydiscount2.CameraEx"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

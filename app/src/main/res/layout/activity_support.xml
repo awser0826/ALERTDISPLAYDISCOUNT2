@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAE7DC"
+    tools:context=".support">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="183dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/add"
+        tools:src="@tools:sample/avatars" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="60dp"
+        android:layout_height="68dp"
+        android:background="#00000000"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#D8C3A5"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.114">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="7dp"
+            android:text="客服中心"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="389dp"
+        android:layout_height="362dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.434">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <SearchView
+                    android:id="@+id/searchView2"
+                    android:layout_width="366dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="center"
+                    android:background="@color/white"
+                    android:iconifiedByDefault="false"
+                    android:queryHint="輸入問題或問題關鍵字" />
+
+                <Button
+                    android:id="@+id/button26"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="常見問題" />
+
+                <Button
+                    android:id="@+id/button27"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="系統相關維護公告" />
+
+                <Button
+                    android:id="@+id/button28"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="電子票券常見問題" />
+
+                <Button
+                    android:id="@+id/button30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如何查詢包裹配送進度?" />
+
+                <Button
+                    android:id="@+id/button32"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如何使用店到店配送服務?" />
+
+                <Button
+                    android:id="@+id/button35"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="如何向賣家提出退貨退款申請?" />
+
+                <Button
+                    android:id="@+id/button31"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="退貨退款懶人包" />
+
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="申請退貨後,請問商品如何退回?" />
+
+                <Button
+                    android:id="@+id/button29"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="運費懶人包" />
+
+                <Button
+                    android:id="@+id/button34"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="發票常見問題" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button36"
+                        android:layout_width="122dp"
+                        android:layout_height="63dp"
+                        android:text="帳號安全"
+                        android:textAlignment="center"
+                        android:textSize="12dp" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button37"
+                        android:layout_width="122dp"
+                        android:layout_height="63dp"
+                        android:layout_gravity="center"
+                        android:textSize="12dp"
+                        android:text="訂單與付款" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button38"
+                        android:layout_width="122dp"
+                        android:layout_height="63dp"
+                        android:textSize="12dp"
+                        android:layout_gravity="right"
+                        android:text="退貨退款" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/button39"
+                        android:layout_width="122dp"
+                        android:layout_height="63dp"
+                        android:textSize="12dp"
+                        android:text="賣家相關" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button40"
+                        android:layout_width="122dp"
+                        android:layout_height="63dp"
+                        android:textSize="12dp"
+                        android:text="寄件物流" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/button41"
+                        android:layout_width="122dp"
+                        android:layout_height="63dp"
+                        android:textSize="12dp"
+                        android:text="商城" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout5"
+        tools:layout_editor_absoluteX="31dp"
+
+        >
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:background="#00000000"
+            android:text="寫信給客服"
+            android:textSize="12dp"
+
+            android:textColor="@color/black" />
+
+
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+
+            android:background="#00000000"
+
+            android:text="在線客服"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/button42"
+            android:layout_width="122dp"
+            android:layout_height="match_parent"
+            android:textSize="12dp"
+
+            android:background="#00000000"
+            android:text="致電給客服"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:layout_alignParentBottom="true"
+        android:background="#D8C3A5"
+        app:itemIconSize="30dp"
+        app:itemIconTint="#8E8D8A"
+        app:itemTextColor="#000000"
+        app:labelVisibilityMode="auto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/item_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
